@@ -1,0 +1,9 @@
+{% if block.images|length > 1 %}
+  <div class="slider">
+    {% for image in block.images %}
+      <div><img src="/posts/{{ entry.slug }}/{{ image.filename }}" alt="{{ image.title }}" /></div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div><img class="image" src="/posts/{{ entry.slug }}/{{ block.images.first().filename }}" alt="{{ block.images.first().title }}" /></div>
+{% endif %}

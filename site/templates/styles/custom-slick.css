@@ -1,0 +1,115 @@
+.slick-slide img,
+.image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 500px;
+  width: 780px;
+  margin: 0 auto;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-current {
+  overflow: unset !important;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  background: red !important;
+}
+
+.slick-prev {
+  left: 0 !important;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+
+.custom-dots {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.custom-dots li {
+  opacity: 0.8;
+  height: 3px;
+  width: 3px;
+  background: #b7b7b7;
+  border-radius: 10%;
+  margin: 15px;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  cursor: pointer;
+}
+
+.custom-dots li:hover {
+  opacity: 1;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  cursor: pointer;
+}
+
+.custom-dots button {
+  padding: 10px;
+  border: none;
+  opacity: 0;
+}
+
+.custom-dots .slick-active {
+  opacity: 0.8;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  opacity: 0.4;
+  color: #b7b7b7;
+  font-size: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -20px;
+  z-index: 1;
+}
+
+.arrow:hover {
+  opacity: 1;
+  font-size: 35px;
+}
+
+.next {
+  left: unset;
+  right: -20px;
+}
+
+.slider {
+  margin: 30px 0 !important;
+}
+/*# sourceMappingURL=custom-slick.css.map */

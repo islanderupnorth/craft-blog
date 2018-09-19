@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en-US">
+{% extends '_layout' %}
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <title>Crafty Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
-    />
-    <meta name="referrer" content="origin-when-cross-origin" />
-</head>
-
-<body class="ltr">
-    <h1>Hi</h1>
-</body>
-
-</html>
+{% block main %}
+    <div class="cards-grid">
+        {% for entry in craft.entries.section('blog').limit(10).all() %}
+            <a class="blog-card" href={{ entry.slug }}>
+                <img class="blog-card-thumbnail" src="/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
+                <div class="blog-card-info">
+                    <p class="blog-card-date">{{ entry.postDate | date("M d, Y") }}</p>
+                    <h1 class="blog-card-title">{{ entry.title }}</h1>
+                    <p class="blog-card-tldr">{{ entry.blogIntroduction }}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}
