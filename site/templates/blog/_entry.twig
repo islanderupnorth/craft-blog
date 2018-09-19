@@ -1,12 +1,58 @@
 {% extends '_layout' %}
 
+{# Set parameters for prev/next elements list #}
+{% set params = craft.entries.section('blog').order('postDate desc, id asc') %}
+
+{# Get the prev/next elements #}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+
 {% block main %}
+    {# <div class="fixed top-left">
+      <div class="blog-date">
+        <a href="/">Back</a>
+      </div>
+    </div> #}
+    {# And make sure to only output the links if the element exists #}
+    <div class="fixed prev-button">
+  {% if prevEntry %}
+      <a href="{{ prevEntry.slug }}">
+          <div>{{ prevEntry.postDate | date("M d, Y") }}</div>
+          {# <div>Older</div> #}
+        {{ prevEntry.title}}
+      </a>
+    {% else %}
+    <div class="finish-flag">🏁</div>
+  {% endif %}
+    </div>
+  {% if nextEntry %}
+    <div class="fixed next-button">
+      <a href="{{ nextEntry.slug }}">
+        <div>{{ nextEntry.postDate | date("M d, Y") }}</div>
+        {# <div>Newer</div> #}
+        {{ nextEntry.title }}
+      </a>
+      {% else %}
+    <div class="finish-flag">🏁</div>
+  {% endif %}
+  </div>
+  {# <div class="fixed top-right">
+    <div class="blog-date">{{ entry.postDate | date("M d, Y") }}</div>
+  </div> #}
+  <div class="fixed bottom-right">
+    {% if entry.city and entry.country %}
+      <div class="blog-location">
+        <a href="https://www.google.com/maps/place/{{ entry.city }},{{ entry.country }}/" target="_blank">
+        <i class="fas fa-map-marker"></i>{{ entry.city }}, {{ entry.country }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
   <div class="blog-post">
-    <p class="blog-date">{{ entry.postDate | date("M d, Y") }}</p>
+    <div class="blog-date">{{ entry.postDate | date("M d, Y") }}</div>
     <h1 class="blog-title">{{ entry.title }}</h1>
-    {# <h2 class="blog-tldr">{{ entry.blogIntroduction }}</h2> #}
     {% for block in entry.modules %}
-        {% include ('blog/_partials/_' ~ block.type.handle) %}
+      {% include ('blog/_partials/_' ~ block.type.handle) %}
     {% endfor %}
   </div>
 {% endblock %}

@@ -3,9 +3,19 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700");
 
+$accent-primary: #7ccf9a;
+$accent-secondary: #8a13ff;
+$black: #303030;
+$white: #fcfcfc;
+
 body {
-  font-family: "Lora";
-  color: #191919;
+  transition: background 1000ms;
+  font-family: "Lora", serif;
+  color: $black;
+  // background: $accent-secondary;
+  // background: $accent-primary;
+  // background: $black;
+  background: $white;
 }
 
 h1 {
@@ -16,17 +26,19 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: 48px;
+}
+
+h4 {
+  color: $accent-secondary;
+  font-size: 48px;
 }
 
 p {
   letter-spacing: 0.015em;
-  font-family: "Lora";
   line-height: 1.7em;
-  margin-bottom: 28px;
   font-size: 24px;
   font-weight: 300;
-  padding: 0 35px;
 }
 
 a {
@@ -34,31 +46,21 @@ a {
   text-decoration: none;
 }
 
-.quote {
-  position: relative;
-  // background: #dedede;
-  padding: 15px 5px;
-}
-
 blockquote {
   position: relative;
-  display: inline-block;
 
   p {
     position: relative;
     z-index: 1;
     font-size: 26px;
-    color: #191919;
+    color: $black;
     font-style: italic;
   }
 
   &:before {
     position: absolute;
     font-family: "Oswald";
-    color: #2f2cd9;
-    color: black;
-    color: #007acc;
-    opacity: 0.3;
+    color: $accent-primary;
     left: -40px;
     top: -40px;
     z-index: 9;
@@ -71,21 +73,57 @@ blockquote {
 
 .author {
   font-size: 22px;
-  color: black;
-  color: #007acc;
-  opacity: 0.3;
+  color: $accent-primary;
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   right: 30px;
 
-  &:before {
+  &:after {
     content: "";
     position: absolute;
     left: -25px;
-    top: 17px;
+    top: 13px;
     height: 3px;
     width: 20px;
-    background: black;
-    background: #007acc;
+    background: $accent-primary;
+  }
+}
+
+/* Blog Spacing */
+.blog-post {
+  p,
+  h2,
+  h3,
+  h4 {
+    margin: 0 35px 20px;
+  }
+  ul,
+  ol {
+    font-size: 24px;
+    margin: 0 40px 20px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  .slider,
+  .image,
+  iframe {
+    margin: 40px 0 !important;
+  }
+  .video iframe {
+    width: 840px;
+    height: 473px;
+  }
+  .quote {
+    position: relative;
+    padding: 50px 0;
+  }
+  .blog-rich-text {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .image {
+    text-align: center;
   }
 }

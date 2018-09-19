@@ -5,5 +5,5 @@
     {% endfor %}
   </div>
   {% else %}
-  <div><img class="image" src="/posts/{{ entry.slug }}/{{ block.images.first().filename }}" alt="{{ block.images.first().title }}" /></div>
+  <div class="image"><img src="/posts/{{ entry.slug }}/{{ block.images.first().filename }}" alt="{{ block.images.first().title }}" /></div>
 {% endif %}

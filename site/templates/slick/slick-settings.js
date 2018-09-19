@@ -12,4 +12,16 @@ $(document).ready(function() {
     dotsClass: "custom-dots",
     pauseOnHover: true
   });
+
+  const blogPost = document.querySelector(".blog-post");
+  const fixed = Array.from(document.querySelectorAll(".fixed"));
+
+  blogPost.addEventListener("mouseenter", () => {
+    fixed.forEach(el => el.classList.add("hide"));
+    document.body.style.background = "#ababab";
+  });
+  blogPost.addEventListener("mouseleave", () => {
+    fixed.forEach(el => el.classList.remove("hide"));
+    document.body.style.background = "#fcfcfc";
+  });
 });
