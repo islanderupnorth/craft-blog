@@ -1,0 +1,47 @@
+body {
+  min-height: 100vh;
+  transition: background 1000ms;
+  font-family: $default-font;
+  color: $black;
+  background-color: #fee140;
+  background-image: linear-gradient(180deg, #fee140 0%, #fa709a 100%);
+}
+
+/* Spacing */
+.blog-post {
+  p,
+  h2,
+  h3,
+  h4 {
+    margin: 0 35px 20px;
+  }
+  ul,
+  ol {
+    font-size: 24px;
+    margin: 0 40px 20px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  .slider,
+  .image,
+  iframe {
+    margin: 40px 0 !important;
+  }
+  .video iframe {
+    width: 840px;
+    height: 473px;
+  }
+  .quote {
+    position: relative;
+    padding: 50px 0;
+  }
+  .blog-rich-text {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .image {
+    text-align: center;
+  }
+}
