@@ -1,0 +1,48 @@
+.cards-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 50px auto 0px;
+  max-width: 980px;
+}
+
+.logo {
+  color: $white;
+  margin: 40px 0 0;
+  font-size: 30px;
+}
+
+nav,
+footer {
+  text-align: center;
+}
+
+footer {
+  margin-bottom: 40px;
+  color: $greywhite;
+
+  a {
+    position: relative;
+
+    &:hover {
+      color: $white;
+
+      &:after {
+        background: $white;
+      }
+    }
+
+    &:after {
+      transition: all 500ms;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 18px;
+      width: 100%;
+      height: 1px;
+      background: $greywhite;
+    }
+  }
+}

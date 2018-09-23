@@ -3,12 +3,29 @@ body {
   transition: background 1000ms;
   font-family: $default-font;
   color: $black;
-  background-color: #fee140;
-  background-image: linear-gradient(180deg, #fee140 0%, #fa709a 100%);
+}
+
+.mood {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Contant container */
+.content {
+  max-width: 840px;
+  border-radius: 5px;
+  position: relative;
+  margin: 40px auto;
+  padding: 100px 60px;
+  background: $white;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05),
+    0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Spacing */
-.blog-post {
+.content {
   p,
   h2,
   h3,

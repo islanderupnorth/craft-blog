@@ -37,11 +37,11 @@
     </div>
   {% endif %}
   {# Matrix Modules #}
-  <div class="blog-post">
+  <div class="content">
     <div class="blog-date">{{ entry.postDate | date("M d, Y") }}</div>
     <h1 class="blog-title">{{ entry.title }}</h1>
     {% for block in entry.modules %}
-      {% include ('blog/_partials/_' ~ block.type.handle) %}
+      {% include ('_modules/_' ~ block.type.handle) %}
     {% endfor %}
   </div>
 {% endblock %}

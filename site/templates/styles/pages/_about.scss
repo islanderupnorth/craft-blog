@@ -1,0 +1,34 @@
+.pages {
+  padding-top: 60px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header-image {
+  border-radius: 4px;
+  object-fit: contain;
+  height: 300px;
+  width: $content-width;
+}
+
+.profile-image {
+  // margin-left: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  // margin-top: -125px;
+  border: 10px solid $white;
+}
+
+.about-title {
+  text-align: center;
+  margin-top: -88px;
+  h2 {
+    font-size: 60px;
+  }
+}
+
+.about-text {
+}

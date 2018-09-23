@@ -1,0 +1,18 @@
+{% extends '_layout' %}
+
+{% block main %}
+  <div class="content pages">
+    {# <center><h2>{{ entry.title }}</h2></center> #}
+    <div class="header">
+      {# <img class="header-image" src="/pages/about/{{ entry.headerImage.one().filename }}" alt="Palms Above" /> #}
+    </div>
+    <div class="about-text">
+      {% for block in entry.modules %}
+        {% include ('_modules/_' ~ block.type.handle) %}
+      {% endfor %}
+    </div>
+    <div class="header">
+      <img class="profile-image" src="/pages/about/{{ entry.profilePicture.one().filename }}" alt="Nicolai Habla" />
+    </div>
+  </div>
+{% endblock %}

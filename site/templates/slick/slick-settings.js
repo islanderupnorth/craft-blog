@@ -13,7 +13,7 @@ $(document).ready(function() {
     pauseOnHover: true
   });
 
-  const blogPost = document.querySelector(".blog-post");
+  const blogPost = document.querySelector(".content");
   const fixed = Array.from(document.querySelectorAll(".fixed"));
 
   blogPost.addEventListener("mouseenter", () => {

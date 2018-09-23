@@ -2,7 +2,7 @@
 
 {% block main %}
     <div class="cards-grid">
-        {% for entry in craft.entries.section('blog').limit(10).all() %}
+        {% for entry in craft.entries.section('blog').all() %}
             <a class="blog-card" href={{ entry.slug }}>
                 <img class="blog-card-thumbnail" src="/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
                 <div class="blog-card-info">

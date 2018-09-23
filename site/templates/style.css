@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Colours */
 /* Fonts */
+/* Margins & paddings */
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700");
 body {
@@ -9,50 +10,65 @@ body {
   transition: background 1000ms;
   font-family: "Lora", serif;
   color: #303030;
-  background-color: #fee140;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fee140), to(#fa709a));
-  background-image: linear-gradient(180deg, #fee140 0%, #fa709a 100%);
+}
+
+.mood {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Contant container */
+.content {
+  max-width: 840px;
+  border-radius: 5px;
+  position: relative;
+  margin: 40px auto;
+  padding: 100px 60px;
+  background: #fcfcfc;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Spacing */
-.blog-post p,
-.blog-post h2,
-.blog-post h3,
-.blog-post h4 {
+.content p,
+.content h2,
+.content h3,
+.content h4 {
   margin: 0 35px 20px;
 }
 
-.blog-post ul,
-.blog-post ol {
+.content ul,
+.content ol {
   font-size: 24px;
   margin: 0 40px 20px;
 }
 
-.blog-post li {
+.content li {
   margin-bottom: 10px;
 }
 
-.blog-post .slider,
-.blog-post .image,
-.blog-post iframe {
+.content .slider,
+.content .image,
+.content iframe {
   margin: 40px 0 !important;
 }
 
-.blog-post .video iframe {
+.content .video iframe {
   width: 840px;
   height: 473px;
 }
 
-.blog-post .quote {
+.content .quote {
   position: relative;
   padding: 50px 0;
 }
 
-.blog-post .blog-rich-text p:last-child {
+.content .blog-rich-text p:last-child {
   margin-bottom: 0;
 }
 
-.blog-post .image {
+.content .image {
   text-align: center;
 }
 
@@ -70,6 +86,7 @@ h2 {
 h4 {
   color: #8a13ff;
   font-size: 48px;
+  text-align: center;
 }
 
 p {
@@ -133,15 +150,80 @@ blockquote:before {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 50px auto 100px;
-  max-width: 1240px;
+  margin: 50px auto 0px;
+  max-width: 980px;
 }
 
 .logo {
-  color: white;
-  margin-top: 30px;
+  color: #fcfcfc;
+  margin: 40px 0 0;
   font-size: 30px;
+}
+
+nav,
+footer {
   text-align: center;
+}
+
+footer {
+  margin-bottom: 40px;
+  color: #c9c9c9;
+}
+
+footer a {
+  position: relative;
+}
+
+footer a:hover {
+  color: #fcfcfc;
+}
+
+footer a:hover:after {
+  background: #fcfcfc;
+}
+
+footer a:after {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 100%;
+  height: 1px;
+  background: #c9c9c9;
+}
+
+.pages {
+  padding-top: 60px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header-image {
+  border-radius: 4px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 300px;
+  width: 840px;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid #fcfcfc;
+}
+
+.about-title {
+  text-align: center;
+  margin-top: -88px;
+}
+
+.about-title h2 {
+  font-size: 60px;
 }
 
 .slick-slide img,
@@ -261,7 +343,8 @@ blockquote:before {
 }
 
 .blog-card {
-  background: white;
+  background: #fcfcfc;
+  border: 8px solid #fcfcfc;
   width: 300px;
   height: 420px;
   display: -webkit-box;
@@ -334,17 +417,6 @@ blockquote:before {
   padding: 0;
 }
 
-.blog-post {
-  max-width: 840px;
-  border-radius: 5px;
-  position: relative;
-  margin: 40px auto 100px;
-  padding: 100px 60px;
-  background: white;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
-}
-
 .fixed {
   -webkit-transition: opacity 800ms;
   transition: opacity 800ms;
@@ -368,12 +440,15 @@ blockquote:before {
   bottom: 0;
   height: 1.5em;
   margin: auto;
-  color: #c9c9c9;
+  color: #303030;
+  -webkit-transition: opacity 400ms, border 100ms;
+  transition: opacity 400ms, border 100ms;
+  border-top: 0px solid #303030;
 }
 
 .prev-button:hover,
 .next-button:hover {
-  color: white;
+  border-top: 3px solid #303030;
 }
 
 .prev-button a,
@@ -412,6 +487,7 @@ blockquote:before {
   position: fixed;
   right: 40px;
   bottom: 40px;
+  z-index: 1;
 }
 
 .blog-date,
@@ -449,5 +525,10 @@ blockquote:before {
   object-fit: cover;
   height: 300px;
   border-radius: 2px 2px 0 0;
+}
+
+.blog-rich-text a {
+  color: #3576ff;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
