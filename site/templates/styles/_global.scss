@@ -3,6 +3,12 @@ body {
   transition: background 1000ms;
   font-family: $default-font;
   color: $black;
+
+  background-image: linear-gradient(
+    120deg,
+    #fdfbfb 0%,
+    #ebedee 100%
+  ) !important;
 }
 
 .mood {

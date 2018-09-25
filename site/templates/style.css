@@ -10,6 +10,7 @@ body {
   transition: background 1000ms;
   font-family: "Lora", serif;
   color: #303030;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
 }
 
 .mood {
@@ -74,7 +75,7 @@ body {
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -149,13 +150,16 @@ blockquote:before {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   flex-wrap: wrap;
   margin: 50px auto 0px;
-  max-width: 980px;
+  max-width: 1060px;
 }
 
 .logo {
-  color: #fcfcfc;
+  color: #303030;
   margin: 40px 0 0;
   font-size: 30px;
 }
@@ -344,9 +348,8 @@ footer a:after {
 
 .blog-card {
   background: #fcfcfc;
-  border: 8px solid #fcfcfc;
   width: 300px;
-  height: 420px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,27 +357,90 @@ footer a:after {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  margin: 0 5px 20px;
-  border-radius: 2px;
-  -webkit-transition: -webkit-transform 400ms, -webkit-box-shadow 400ms;
-  transition: -webkit-transform 400ms, -webkit-box-shadow 400ms;
-  transition: transform 400ms, box-shadow 400ms;
-  transition: transform 400ms, box-shadow 400ms, -webkit-transform 400ms, -webkit-box-shadow 400ms;
-  overflow: hidden;
+  border: 18px solid white;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01), 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.01);
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.blog-card .blog-card-location {
+  display: none;
+}
+
+.blog-card:first-of-type {
+  width: 1156px;
+  margin-left: -48px;
+  margin-right: -48px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  height: 100%;
+  padding: 40px;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.04), 0 10px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.04), 0 10px 10px rgba(0, 0, 0, 0.04);
+  -webkit-transform: translateY(-5px);
+}
+
+.blog-card:first-of-type .blog-card-info {
+  padding: 0 40px;
+}
+
+.blog-card:first-of-type .blog-card-tldr {
+  display: unset;
+}
+
+.blog-card:first-of-type .blog-card-location {
+  display: block;
+  font-size: 14px;
+  color: #c9c9c9;
+}
+
+.blog-card:first-of-type .blog-card-location i {
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+.blog-card:first-of-type h1 {
+  font-size: 60px;
+}
+
+.blog-card:first-of-type img {
+  height: 400px;
+  width: 400px;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.blog-card:first-of-type .blog-card-tldr {
+  font-size: 24px;
+  line-height: 2.2rem;
 }
 
 .blog-card:hover {
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.04), 0 10px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.04), 0 10px 10px rgba(0, 0, 0, 0.04);
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
+}
+
+.blog-card:hover:first-of-type {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .blog-card:hover .blog-card-info {
   -webkit-transform: translateY(-60px);
   transform: translateY(-60px);
+}
+
+.blog-card:hover .blog-card-info:first-of-type {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .blog-card:hover .blog-card-tldr {
@@ -390,7 +456,7 @@ footer a:after {
 
 .blog-card-date {
   font-size: 12px;
-  color: #d4d4d4;
+  color: #c9c9c9;
   padding: 0;
   margin: 0;
 }
@@ -401,7 +467,7 @@ footer a:after {
 
 .blog-card-info {
   background: white;
-  padding: 17px 30px;
+  padding-top: 17px;
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
@@ -409,12 +475,12 @@ footer a:after {
 }
 
 .blog-card-tldr {
-  opacity: 0;
   -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
   font-size: 14px;
   line-height: 1.2rem;
   padding: 0;
+  display: none;
 }
 
 .fixed {
