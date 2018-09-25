@@ -8,6 +8,7 @@
                 <div class="blog-card-info">
                     <p class="blog-card-date">{{ entry.postDate | date("M d, Y") }}</p>
                     <h1 class="blog-card-title">{{ entry.title }}</h1>
+                    <span>{{ entry.city }}, {{ entry.country }}</span>
                     <p class="blog-card-tldr">{{ entry.blogIntroduction }}</p>
                 </div>
             </a>
