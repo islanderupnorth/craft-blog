@@ -10,7 +10,6 @@ body {
   transition: background 1000ms;
   font-family: "Lora", serif;
   color: #303030;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
 }
 
 .mood {
