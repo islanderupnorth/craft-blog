@@ -8,20 +8,237 @@ class ComposerStaticInit4f573937d6fb36b1f4fe864b0c2b47e4
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '65fec9ebcfbb3cbb4fd0d519687aea01' => __DIR__ . '/..' . '/danielstjules/stringy/src/Create.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '603ce470d3b0980801c7a6185a3d6d53' => __DIR__ . '/..' . '/icanboogie/inflector/lib/helpers.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        '5a87f6d0b1b9422830645558b05cb3c9' => __DIR__ . '/..' . '/tcb13/substringy/src/Create.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'y' => 
+        array (
+            'yii\\swiftmailer\\' => 16,
+            'yii\\queue\\sync\\' => 15,
+            'yii\\queue\\sqs\\' => 14,
+            'yii\\queue\\redis\\' => 16,
+            'yii\\queue\\gearman\\' => 18,
+            'yii\\queue\\file\\' => 15,
+            'yii\\queue\\db\\' => 13,
+            'yii\\queue\\beanstalk\\' => 20,
+            'yii\\queue\\amqp_interop\\' => 23,
+            'yii\\queue\\amqp\\' => 15,
+            'yii\\queue\\' => 10,
+            'yii\\debug\\' => 10,
+            'yii\\composer\\' => 13,
+            'yii\\bootstrap\\' => 14,
+            'yii\\' => 4,
+        ),
+        't' => 
+        array (
+            'topshelfcraft\\wordsmith\\' => 24,
+        ),
+        'm' => 
+        array (
+            'mikehaertl\\shellcommand\\' => 24,
+        ),
+        'e' => 
+        array (
+            'enshrined\\svgSanitize\\' => 22,
+        ),
+        'c' => 
+        array (
+            'creocoder\\nestedsets\\' => 21,
+            'craftcms\\oauth2\\client\\' => 23,
+            'craft\\composer\\' => 15,
+            'craft\\' => 6,
+            'cebe\\markdown\\' => 14,
+        ),
+        'Z' => 
+        array (
+            'Zend\\Stdlib\\' => 12,
+            'Zend\\Feed\\' => 10,
+            'Zend\\Escaper\\' => 13,
+        ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
+            'TrueBV\\' => 7,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Symfony\\Component\\Process\\' => 26,
+            'Symfony\\Component\\Finder\\' => 25,
+            'Symfony\\Component\\Filesystem\\' => 29,
+            'Symfony\\Component\\Console\\' => 26,
+            'SubStringy\\' => 11,
+            'Stringy\\' => 8,
+            'Seld\\PharUtils\\' => 15,
+            'Seld\\JsonLint\\' => 14,
+            'Seld\\CliPrompt\\' => 15,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
+        ),
+        'M' => 
+        array (
+            'Masterminds\\' => 12,
+        ),
+        'L' => 
+        array (
+            'LitEmoji\\' => 9,
+            'League\\OAuth2\\Client\\' => 21,
+            'League\\Flysystem\\' => 17,
+        ),
+        'J' => 
+        array (
+            'JsonSchema\\' => 11,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
+        ),
+        'E' => 
+        array (
+            'Egulias\\EmailValidator\\' => 23,
+        ),
+        'C' => 
+        array (
+            'Composer\\Spdx\\' => 14,
+            'Composer\\Semver\\' => 16,
+            'Composer\\CaBundle\\' => 18,
+            'Composer\\' => 9,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'yii\\swiftmailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer/src',
+        ),
+        'yii\\queue\\sync\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/sync',
+        ),
+        'yii\\queue\\sqs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/sqs',
+        ),
+        'yii\\queue\\redis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/redis',
+        ),
+        'yii\\queue\\gearman\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/gearman',
+        ),
+        'yii\\queue\\file\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/file',
+        ),
+        'yii\\queue\\db\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/db',
+        ),
+        'yii\\queue\\beanstalk\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/beanstalk',
+        ),
+        'yii\\queue\\amqp_interop\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/amqp_interop',
+        ),
+        'yii\\queue\\amqp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/amqp',
+        ),
+        'yii\\queue\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src',
+        ),
+        'yii\\debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-debug/src',
+        ),
+        'yii\\composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-composer',
+        ),
+        'yii\\bootstrap\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-bootstrap/src',
+        ),
+        'yii\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'topshelfcraft\\wordsmith\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/topshelfcraft/wordsmith/src',
+        ),
+        'mikehaertl\\shellcommand\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mikehaertl/php-shellcommand/src',
+        ),
+        'enshrined\\svgSanitize\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/enshrined/svg-sanitize/src',
+        ),
+        'creocoder\\nestedsets\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/creocoder/yii2-nested-sets/src',
+        ),
+        'craftcms\\oauth2\\client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/craftcms/oauth2-craftid/src',
+        ),
+        'craft\\composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/craftcms/plugin-installer/src',
+        ),
+        'craft\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/craftcms/cms/src',
+        ),
+        'cebe\\markdown\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cebe/markdown',
+        ),
+        'Zend\\Stdlib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-stdlib/src',
+        ),
+        'Zend\\Feed\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-feed/src',
+        ),
+        'Zend\\Escaper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'TrueBV\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/true/punycode/src',
+        ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
@@ -30,10 +247,222 @@ class ComposerStaticInit4f573937d6fb36b1f4fe864b0c2b47e4
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
+        ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
+        'Symfony\\Component\\Filesystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/filesystem',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'SubStringy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tcb13/substringy/src',
+        ),
+        'Stringy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/danielstjules/stringy/src',
+        ),
+        'Seld\\PharUtils\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/seld/phar-utils/src',
+        ),
+        'Seld\\JsonLint\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint',
+        ),
+        'Seld\\CliPrompt\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/seld/cli-prompt/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Masterminds\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/masterminds/html5/src',
+        ),
+        'LitEmoji\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elvanto/litemoji/src',
+        ),
+        'League\\OAuth2\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/oauth2-client/src',
+        ),
+        'League\\Flysystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem/src',
+        ),
+        'JsonSchema\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Egulias\\EmailValidator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
+        ),
+        'Composer\\Spdx\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/spdx-licenses/src',
+        ),
+        'Composer\\Semver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/semver/src',
+        ),
+        'Composer\\CaBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
+        ),
+        'Composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/composer/src/Composer',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
+        'P' => 
+        array (
+            'ParsedownExtra' => 
+            array (
+                0 => __DIR__ . '/..' . '/erusev/parsedown-extra',
+            ),
+            'Parsedown' => 
+            array (
+                0 => __DIR__ . '/..' . '/erusev/parsedown',
+            ),
+        ),
+        'I' => 
+        array (
+            'Imagine' => 
+            array (
+                0 => __DIR__ . '/..' . '/pixelandtonic/imagine/lib',
+            ),
+        ),
+        'H' => 
+        array (
+            'HTMLPurifier' => 
+            array (
+                0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
+            ),
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+            'DaveChild\\TextStatistics' => 
+            array (
+                0 => __DIR__ . '/..' . '/davechild/textstatistics/src',
+            ),
+        ),
+    );
+
+    public static $fallbackDirsPsr0 = array (
+        0 => __DIR__ . '/..' . '/mofodojodino/profanity-filter/src',
+    );
+
+    public static $classMap = array (
+        'ICanBoogie\\Inflections' => __DIR__ . '/..' . '/icanboogie/inflector/lib/inflections.php',
+        'ICanBoogie\\Inflector' => __DIR__ . '/..' . '/icanboogie/inflector/lib/inflector.php',
+        'PHP_Typography\\Bin\\File_Operations' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/bin/class-file-operations.php',
+        'PHP_Typography\\Bin\\Pattern_Converter' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/bin/class-pattern-converter.php',
+        'PHP_Typography\\DOM' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/class-dom.php',
+        'PHP_Typography\\Fixes\\Default_Registry' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/class-default-registry.php',
+        'PHP_Typography\\Fixes\\Node_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/class-node-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Abstract_Node_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-abstract-node-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Classes_Dependent_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-classes-dependent-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Dash_Spacing_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-dash-spacing-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Dewidow_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-dewidow-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\French_Punctuation_Spacing_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-french-punctuation-spacing-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Numbered_Abbreviation_Spacing_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-numbered-abbreviation-spacing-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Process_Words_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-process-words-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Simple_Regex_Replacement_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-simple-regex-replacement-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Simple_Style_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-simple-style-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Single_Character_Word_Spacing_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-single-character-word-spacing-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Dashes_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-dashes-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Diacritics_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-diacritics-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Ellipses_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-ellipses-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Exponents_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-exponents-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Fractions_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-fractions-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Marks_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-marks-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Maths_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-maths-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Ordinal_Suffix_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-ordinal-suffix-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Smart_Quotes_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-smart-quotes-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Space_Collapse_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-space-collapse-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Style_Ampersands_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-style-ampersands-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Style_Caps_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-style-caps-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Style_Hanging_Punctuation_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-style-hanging-punctuation-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Style_Initial_Quotes_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-style-initial-quotes-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Style_Numbers_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-style-numbers-fix.php',
+        'PHP_Typography\\Fixes\\Node_Fixes\\Unit_Spacing_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/node-fixes/class-unit-spacing-fix.php',
+        'PHP_Typography\\Fixes\\Registry' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/class-registry.php',
+        'PHP_Typography\\Fixes\\Token_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/class-token-fix.php',
+        'PHP_Typography\\Fixes\\Token_Fixes\\Abstract_Token_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/token-fixes/class-abstract-token-fix.php',
+        'PHP_Typography\\Fixes\\Token_Fixes\\Hyphenate_Compounds_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/token-fixes/class-hyphenate-compounds-fix.php',
+        'PHP_Typography\\Fixes\\Token_Fixes\\Hyphenate_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/token-fixes/class-hyphenate-fix.php',
+        'PHP_Typography\\Fixes\\Token_Fixes\\Smart_Dashes_Hyphen_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/token-fixes/class-smart-dashes-hyphen-fix.php',
+        'PHP_Typography\\Fixes\\Token_Fixes\\Wrap_Emails_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/token-fixes/class-wrap-emails-fix.php',
+        'PHP_Typography\\Fixes\\Token_Fixes\\Wrap_Hard_Hyphens_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/token-fixes/class-wrap-hard-hyphens-fix.php',
+        'PHP_Typography\\Fixes\\Token_Fixes\\Wrap_URLs_Fix' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/fixes/token-fixes/class-wrap-urls-fix.php',
+        'PHP_Typography\\Hyphenator' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/class-hyphenator.php',
+        'PHP_Typography\\Hyphenator\\Cache' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/hyphenator/class-cache.php',
+        'PHP_Typography\\Hyphenator\\Trie_Node' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/hyphenator/class-trie-node.php',
+        'PHP_Typography\\PHP_Typography' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/class-php-typography.php',
+        'PHP_Typography\\RE' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/class-re.php',
+        'PHP_Typography\\Settings' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/class-settings.php',
+        'PHP_Typography\\Settings\\Dash_Style' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/settings/class-dash-style.php',
+        'PHP_Typography\\Settings\\Dashes' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/settings/class-dashes.php',
+        'PHP_Typography\\Settings\\Quote_Style' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/settings/class-quote-style.php',
+        'PHP_Typography\\Settings\\Quotes' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/settings/class-quotes.php',
+        'PHP_Typography\\Settings\\Simple_Dashes' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/settings/class-simple-dashes.php',
+        'PHP_Typography\\Settings\\Simple_Quotes' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/settings/class-simple-quotes.php',
+        'PHP_Typography\\Strings' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/class-strings.php',
+        'PHP_Typography\\Text_Parser' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/class-text-parser.php',
+        'PHP_Typography\\Text_Parser\\Token' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/text-parser/class-token.php',
+        'PHP_Typography\\U' => __DIR__ . '/..' . '/mundschenk-at/php-typography/src/class-u.php',
+        'RequirementsChecker' => __DIR__ . '/..' . '/craftcms/server-check/server/requirements/RequirementsChecker.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -41,6 +470,9 @@ class ComposerStaticInit4f573937d6fb36b1f4fe864b0c2b47e4
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit4f573937d6fb36b1f4fe864b0c2b47e4::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit4f573937d6fb36b1f4fe864b0c2b47e4::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit4f573937d6fb36b1f4fe864b0c2b47e4::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit4f573937d6fb36b1f4fe864b0c2b47e4::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit4f573937d6fb36b1f4fe864b0c2b47e4::$classMap;
 
         }, null, ClassLoader::class);
     }

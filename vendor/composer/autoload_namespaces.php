@@ -6,4 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Twig_' => array($vendorDir . '/twig/twig/lib'),
+    'ParsedownExtra' => array($vendorDir . '/erusev/parsedown-extra'),
+    'Parsedown' => array($vendorDir . '/erusev/parsedown'),
+    'Imagine' => array($vendorDir . '/pixelandtonic/imagine/lib'),
+    'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
+    'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
+    'DaveChild\\TextStatistics' => array($vendorDir . '/davechild/textstatistics/src'),
+    '' => array($vendorDir . '/mofodojodino/profanity-filter/src'),
 );

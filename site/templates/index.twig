@@ -1,17 +1,19 @@
 {% extends '_layout' %}
 
+
+
 {% block main %}
     <div class="cards-grid">
         {% for entry in craft.entries.section('blog').all() %}
             <a class="blog-card" href={{ entry.slug }}>
                 <img class="blog-card-thumbnail" src="/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
                 <div class="blog-card-info">
-                    <p class="blog-card-date">{{ entry.postDate | date("M d, Y") }}</p>
+                    <p class="blog-card-pretitle">{{ entry.postDate | date("M d, Y") }} <br><i class="fas fa-map-marker"></i> {{ entry.city }}, {{ entry.country }}</p> 
                     <h1 class="blog-card-title">{{ entry.title }}</h1>
-                    <span class="blog-card-location"><i class="fas fa-map-marker"></i> {{ entry.city }}, {{ entry.country }}</span>
                     <p class="blog-card-tldr">{{ entry.blogIntroduction }}</p>
+                    <i class="blog-card-read-more fas fa-arrow-circle-right"></i>
                 </div>
             </a>
         {% endfor %}
-    </a>
+    </div>
 {% endblock %}

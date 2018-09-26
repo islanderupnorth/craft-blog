@@ -72,10 +72,15 @@
 
 .blog-date,
 .blog-location {
+  transition: color 350ms;
   letter-spacing: 0.02em;
   font-size: 14px;
-  color: $external-link;
+  color: $greywhite;
   text-align: center;
+}
+
+.blog-location:hover {
+  color: $external-link;
 }
 
 .blog-date i,

@@ -26,19 +26,16 @@
       </a>
     </div>
   {% endif %}
-  {# Google Maps #}
-  {% if entry.city and entry.country %}
-    <div class="fixed bottom-right">
-      <div class="blog-location">
+  {# Matrix Modules #}
+  <div class="content">
+    <img class="blog-card-thumbnail" src="/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
+    <div class="blog-date">{{ entry.postDate | date("M d, Y") }}</div>
+    {# Google Maps #}
+    <div class="blog-location">
         <a href="https://www.google.com/maps/place/{{ entry.city }},{{ entry.country }}/" target="_blank">
         <i class="fas fa-map-marker"></i>{{ entry.city }}, {{ entry.country }}
         </a>
-      </div>
     </div>
-  {% endif %}
-  {# Matrix Modules #}
-  <div class="content">
-    <div class="blog-date">{{ entry.postDate | date("M d, Y") }}</div>
     <h1 class="blog-title">{{ entry.title }}</h1>
     {% for block in entry.modules %}
       {% include ('_modules/_' ~ block.type.handle) %}

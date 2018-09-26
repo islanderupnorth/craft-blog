@@ -12,3 +12,8 @@ $heading-font: "Oswald", sans-serif;
 
 /* Margins & paddings */
 $content-width: 840px;
+
+/* Drop shadow */
+$subtle-shadow: 0 14px 28px rgba(0, 0, 0, 0.04), 0 10px 10px rgba(0, 0, 0, 0.04);
+$hovered-shadow: 0 14px 28px rgba(0, 0, 0, 0.06),
+  0 10px 10px rgba(0, 0, 0, 0.06);
