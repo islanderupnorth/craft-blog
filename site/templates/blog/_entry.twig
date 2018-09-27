@@ -16,6 +16,9 @@
         <div>{{ prevEntry.postDate | date("M d, Y") }}</div>
       </a>
     </div>
+    <div class="mobile-prev-button">
+      <a href="{{ nextEntry.slug }}"><i class="fas fa-arrow-circle-left"></i> <span>{{ prevEntry.postDate | date("M d, Y") }}</span></a>
+    </div>
   {% endif %}
   {# Next Entry #}
   {% if nextEntry %}
@@ -24,6 +27,9 @@
         <div>{{ nextEntry.title }}</div>
         <div>{{ nextEntry.postDate | date("M d, Y") }}</div>
       </a>
+    </div>
+    <div class="mobile-next-button">
+      <a href="{{ nextEntry.slug }}"><span>{{ nextEntry.postDate | date("M d, Y") }}</span> <i class="fas fa-arrow-circle-right"></i></a>
     </div>
   {% endif %}
   {# Matrix Modules #}

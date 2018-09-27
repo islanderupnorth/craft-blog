@@ -12,9 +12,10 @@
 .logo {
   display: inline-block;
   color: $black;
-  margin: 20px 0 0;
+  margin-top: 20px;
 
   h1 {
+    margin: 0;
     font-size: 2em;
   }
 }
@@ -33,7 +34,8 @@ footer {
   }
 
   @media ($mobile) {
-    margin-bottom: 30px;
+    padding-top: 40px;
+    opacity: 0.5;
   }
 }
 

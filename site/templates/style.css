@@ -14,7 +14,10 @@ body {
   font-family: "Lora", serif;
   color: #303030;
   font-size: 16px;
-  background-image: linear-gradient(150deg, #a2b9d7 0%, #dcdeeb 100%) !important;
+  background-image: linear-gradient(150deg, #a2b9d7 0%, #dcdeeb 100%);
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .mood {
@@ -308,10 +311,11 @@ blockquote:before {
 .logo {
   display: inline-block;
   color: #303030;
-  margin: 20px 0 0;
+  margin-top: 20px;
 }
 
 .logo h1 {
+  margin: 0;
   font-size: 2em;
 }
 
@@ -331,7 +335,8 @@ footer a {
 
 @media (max-width: 767px) {
   footer {
-    margin-bottom: 30px;
+    padding-top: 40px;
+    opacity: 0.5;
   }
 }
 
@@ -750,13 +755,13 @@ footer a {
   }
 }
 
-.blog-location {
+.blog-page .blog-location {
   color: #c9c9c9;
   -webkit-transition: color 350ms;
   transition: color 350ms;
 }
 
-.blog-location:hover {
+.blog-page .blog-location:hover {
   color: #3576ff;
 }
 
@@ -814,6 +819,30 @@ footer a {
   transform-origin: 100% 50%;
   -webkit-transform: rotate(90deg) translate(50%, 50%);
   transform: rotate(90deg) translate(50%, 50%);
+}
+
+.mobile-next-button,
+.mobile-prev-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-next-button,
+  .mobile-prev-button {
+    color: #fcfcfc;
+    padding: 5px 10px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
+.mobile-next-button {
+  right: 40px;
+}
+
+.mobile-prev-button {
+  left: 40px;
 }
 
 .finish-flag {

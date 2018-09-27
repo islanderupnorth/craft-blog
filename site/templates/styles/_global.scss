@@ -4,17 +4,9 @@ body {
   font-family: $default-font;
   color: $black;
   font-size: 16px;
-
-  // background-image: linear-gradient(
-  //   120deg,
-  //   #fdfbfb 0%,
-  //   #ebedee 100%
-  // ) !important;
-  background-image: linear-gradient(
-    150deg,
-    #a2b9d7 0%,
-    #dcdeeb 100%
-  ) !important;
+  background-image: linear-gradient(150deg, #a2b9d7 0%, #dcdeeb 100%);
+  position: relative;
+  box-sizing: border-box;
 }
 
 .mood {
@@ -27,7 +19,6 @@ body {
 .content {
   max-width: 1060px;
   border-radius: 2px;
-  // position: relative;
   margin: 50px auto;
   padding: 0 48px 100px;
   background: $white;

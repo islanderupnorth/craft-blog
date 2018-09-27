@@ -24,7 +24,7 @@
   }
 }
 
-.blog-location {
+.blog-page .blog-location {
   color: $greywhite;
   transition: color 350ms;
   &:hover {
@@ -85,6 +85,25 @@
   transform-origin: 100% 50%;
   -webkit-transform: rotate(90deg) translate(50%, 50%);
   transform: rotate(90deg) translate(50%, 50%);
+}
+
+.mobile-next-button,
+.mobile-prev-button {
+  display: none;
+  @media ($mobile) {
+    color: $white;
+    padding: 5px 10px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
+.mobile-next-button {
+  right: 40px;
+}
+.mobile-prev-button {
+  left: 40px;
 }
 
 .finish-flag {
