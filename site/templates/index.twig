@@ -1,19 +1,20 @@
 {% extends '_layout' %}
 
-
-
 {% block main %}
-    <div class="cards-grid">
-        {% for entry in craft.entries.section('blog').all() %}
-            <a class="blog-card" href={{ entry.slug }}>
-                <img class="blog-card-thumbnail" src="/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
-                <div class="blog-card-info">
-                    <p class="blog-card-pretitle">{{ entry.postDate | date("M d, Y") }} <br><i class="fas fa-map-marker"></i> {{ entry.city }}, {{ entry.country }}</p> 
-                    <h1 class="blog-card-title">{{ entry.title }}</h1>
-                    <p class="blog-card-tldr">{{ entry.blogIntroduction }}</p>
-                    <i class="blog-card-read-more fas fa-arrow-circle-right"></i>
-                </div>
-            </a>
-        {% endfor %}
-    </div>
+  <div class="cards-grid">
+    {% for entry in craft.entries.section('blog').all() %}
+      <a class="blog-card" href={{ entry.slug }}>
+        <img class="blog-feature-image" src="/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
+        <div class="blog-info">
+          <div class="blog-pretitle">
+            <span>{{ entry.postDate | date("M d, Y") }}</span>
+            <span class="blog-location"><i class="fas fa-map-marker"></i> {{ entry.city }}, {{ entry.country }}</span>
+          </div>
+          <h1 class="blog-title">{{ entry.title }}</h1>
+          <p class="blog-intro">{{ entry.blogIntroduction }}</p>
+          <i class="blog-readmore fas fa-arrow-circle-right"></i>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
 {% endblock %}

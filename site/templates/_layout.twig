@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <title>Crafty Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
     <meta name="referrer" content="origin-when-cross-origin" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -16,7 +15,7 @@
 
 <body {% if entry.backgroundMood.value is defined %} style="{{ entry.backgroundMood.value }}" {% endif %}>
     <nav>
-        <a href="/"><h1 class="logo">{ Stay Curious }</h1></a>
+        <a class="logo" href="/"><h1>{ Stay Curious }</h1></a>
     </nav>
         {% block main %}
         {% endblock %}

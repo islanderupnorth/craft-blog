@@ -1,3 +1,9 @@
+/* Media Queries */
+$mobile: "max-width: 767px";
+$tablet: "min-width: 768px";
+$tablet-only: "min-width: 768px) and (max-width: 1024px";
+$desktop: "min-width: 1025px";
+
 /* Colours */
 $accent-primary: #7ccf9a;
 $accent-secondary: #8a13ff;
@@ -10,10 +16,13 @@ $external-link: #3576ff;
 $default-font: "Lora", serif;
 $heading-font: "Oswald", sans-serif;
 
+/* Sizes */
+$large-h1: 3.75em;
+
 /* Margins & paddings */
 $content-width: 840px;
 
 /* Drop shadow */
 $subtle-shadow: 0 14px 28px rgba(0, 0, 0, 0.04), 0 10px 10px rgba(0, 0, 0, 0.04);
-$hovered-shadow: 0 14px 28px rgba(0, 0, 0, 0.06),
-  0 10px 10px rgba(0, 0, 0, 0.06);
+$active-shadow: 0 14px 100px rgba(0, 0, 0, 0.12),
+  0 10px 10px rgba(0, 0, 0, 0.12);

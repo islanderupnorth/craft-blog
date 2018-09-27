@@ -3,26 +3,47 @@
 
 h1 {
   font-family: $heading-font;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 700;
 }
 
 h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 3em;
+
+  @media ($mobile) {
+    font-size: 1.6em;
+  }
 }
 
 h4 {
   color: $accent-secondary;
-  font-size: 48px;
+  font-size: 3em;
   text-align: center;
+
+  @media ($mobile) {
+    font-size: 1.6em;
+  }
 }
 
 p {
-  letter-spacing: 0.015em;
-  line-height: 1.7em;
-  font-size: 24px;
+  letter-spacing: 0.023rem;
+  line-height: 2.5rem;
+  font-size: 1.5em;
   font-weight: 300;
+
+  @media ($mobile) {
+    font-size: 0.875em;
+    line-height: 1.4rem;
+  }
+}
+
+ol,
+ul {
+  font-size: 1em;
+  @media ($mobile) {
+    font-size: 0.875em;
+  }
 }
 
 a {
@@ -36,9 +57,13 @@ blockquote {
   p {
     position: relative;
     z-index: 1;
-    font-size: 26px;
+    font-size: 1.6em;
     color: $black;
     font-style: italic;
+
+    @media ($mobile) {
+      font-size: 1em;
+    }
   }
 
   &:before {
@@ -50,13 +75,19 @@ blockquote {
     z-index: 9;
     content: "”";
     content: "“";
-    font-size: 240px;
+    font-size: 15em;
     line-height: 1;
+
+    @media ($mobile) {
+      font-size: 8em;
+      left: -40px;
+      top: -30px;
+    }
   }
 }
 
 .author {
-  font-size: 22px;
+  font-size: 1.4em;
   color: $accent-primary;
   position: absolute;
   bottom: 35px;
@@ -70,5 +101,18 @@ blockquote {
     height: 3px;
     width: 20px;
     background: $accent-primary;
+  }
+
+  @media ($mobile) {
+    font-size: 0.875em;
+    bottom: 18px;
+    right: 10px;
+
+    &:after {
+      top: 9px;
+      left: -12px;
+      width: 10px;
+      height: 1px;
+    }
   }
 }

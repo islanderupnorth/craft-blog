@@ -5,6 +5,11 @@
   height: 500px;
   width: 840px;
   margin: 0 auto;
+
+  @media ($mobile) {
+    height: 250px;
+    width: 100%;
+  }
 }
 
 .slick-slider .slick-track,
@@ -27,6 +32,10 @@
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media ($mobile) {
+    // display: none !important;
+  }
 
   li {
     height: 3px;
@@ -91,6 +100,10 @@
 
   &:hover {
     color: #8a13ff !important;
+  }
+
+  @media ($mobile) {
+    display: none !important;
   }
 }
 

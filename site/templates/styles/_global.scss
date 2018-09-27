@@ -3,11 +3,17 @@ body {
   transition: background 1000ms;
   font-family: $default-font;
   color: $black;
+  font-size: 16px;
 
+  // background-image: linear-gradient(
+  //   120deg,
+  //   #fdfbfb 0%,
+  //   #ebedee 100%
+  // ) !important;
   background-image: linear-gradient(
-    120deg,
-    #fdfbfb 0%,
-    #ebedee 100%
+    150deg,
+    #a2b9d7 0%,
+    #dcdeeb 100%
   ) !important;
 }
 
@@ -19,15 +25,19 @@ body {
 
 /* Contant container */
 .content {
-  max-width: 840px;
-  border-radius: 5px;
-  position: relative;
-  margin: 40px auto;
-  padding: 100px 60px;
+  max-width: 1060px;
+  border-radius: 2px;
+  // position: relative;
+  margin: 50px auto;
+  padding: 0 48px 100px;
   background: $white;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05),
-    0 3px 6px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: $active-shadow;
+
+  @media ($mobile) {
+    box-sizing: border-box;
+    margin: 0 0 30px;
+    padding: 0 18px 30px;
+  }
 }
 
 /* Spacing */
@@ -37,34 +47,82 @@ body {
   h3,
   h4 {
     margin: 0 35px 20px;
+
+    @media ($mobile) {
+      margin: 0 5px 10px;
+    }
   }
   ul,
   ol {
-    font-size: 24px;
     margin: 0 40px 20px;
+
+    @media ($mobile) {
+      margin: 0 0 12px;
+    }
   }
   li {
     margin-bottom: 10px;
+
+    @media ($mobile) {
+      margin-bottom: 4px;
+    }
   }
   .slider,
   .image,
   iframe {
     margin: 40px 0 !important;
+
+    @media ($mobile) {
+      margin: 10px 0 !important;
+    }
+  }
+  .video {
+    text-align: center;
   }
   .video iframe {
     width: 840px;
     height: 473px;
+
+    @media ($mobile) {
+      width: 308px;
+      height: 173px;
+    }
+  }
+  .code iframe {
+    max-height: 350px;
   }
   .quote {
     position: relative;
     padding: 50px 0;
+    margin: 0 80px;
+
+    @media ($mobile) {
+      padding: 20px 0;
+      margin: 0;
+    }
   }
   .blog-rich-text {
+    margin: 0 80px;
     p:last-child {
       margin-bottom: 0;
+    }
+    @media ($mobile) {
+      margin: 0;
     }
   }
   .image {
     text-align: center;
+  }
+}
+
+hr {
+  width: 280px;
+  margin: 50px auto;
+  border: 1px solid $greywhite;
+  opacity: 0.2;
+
+  @media ($mobile) {
+    width: 140px;
+    margin: 0 auto 16px;
   }
 }
