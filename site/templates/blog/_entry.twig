@@ -35,12 +35,12 @@
   {# Matrix Modules #}
   <div class="content">
     <div class="blog-card blog-page">
-      <img class="blog-feature-image" src="/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
+      <img class="blog-feature-image" src="/blog/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
       <div class="blog-info">
           <div class="blog-pretitle">
             <span>{{ entry.postDate | date("M d, Y") }}</span>
             <span class="blog-location">
-              <a href="https://www.google.com/maps/place/{{ entry.city }},{{ entry.country }}/">
+              <a href="https://www.google.com/maps/place/{{ entry.city }},{{ entry.country }}/" target="_blank">
                 <i class="fas fa-map-marker"></i>
                 {{ entry.city }}, {{ entry.country }}
               </a>

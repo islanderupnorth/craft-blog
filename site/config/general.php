@@ -45,6 +45,6 @@ return [
     // Production environment settings
     'production' => [
         // Base site URL
-        'siteUrl' => null,
+        'siteUrl' => getenv('SITE_URL'),
     ],
 ];

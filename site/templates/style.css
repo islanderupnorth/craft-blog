@@ -116,7 +116,13 @@ body {
 }
 
 .content .code iframe {
-  max-height: 350px;
+  height: 600px;
+}
+
+@media (max-width: 767px) {
+  .content .code iframe {
+    max-height: 350px;
+  }
 }
 
 .content .quote {
@@ -530,6 +536,7 @@ footer a {
   margin-bottom: 30px;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.04), 0 10px 10px rgba(0, 0, 0, 0.04);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.04), 0 10px 10px rgba(0, 0, 0, 0.04);
+  position: relative;
   -webkit-transition: -webkit-box-shadow 500ms;
   transition: -webkit-box-shadow 500ms;
   transition: box-shadow 500ms;

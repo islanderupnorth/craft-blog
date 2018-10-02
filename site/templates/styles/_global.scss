@@ -80,7 +80,10 @@ body {
     }
   }
   .code iframe {
-    max-height: 350px;
+    height: 600px;
+    @media ($mobile) {
+      max-height: 350px;
+    }
   }
   .quote {
     position: relative;

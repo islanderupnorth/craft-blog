@@ -4,7 +4,7 @@
   <div class="cards-grid">
     {% for entry in craft.entries.section('blog').all() %}
       <a class="blog-card" href={{ entry.slug }}>
-        <img class="blog-feature-image" src="/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
+        <img class="blog-feature-image" src="/blog/posts/{{ entry.slug }}/thumbnail/{{ entry.featuredThumbnail.one().filename }}" />
         <div class="blog-info">
           <div class="blog-pretitle">
             <span>{{ entry.postDate | date("M d, Y") }}</span>
